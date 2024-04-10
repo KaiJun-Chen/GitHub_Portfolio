@@ -33,5 +33,23 @@ span.sub-title {
   height: auto;
   margin: 10px;
   padding: 10px;
-  background-color: rgb(0, 180, 225);
+  background-color: rgb(180, 180, 225);
+}
+
+.icon-glow {
+  border-radius: 50px;
+  background-color: #ccc;
+  border: 1px solid transparent;
+  -webkit-transition: border 1s linear, box-shadow 1s linear;
+  -moz-transition: border 1s linear, box-shadow 1s linear;
+  transition: border 1s linear, box-shadow 1s linear;
+  width: 100px;
+  height: auto;
+  margin: 10px;
+}
+
+.icon-glow.active {
+  -webkit-box-shadow: 0 0 40px orange;
+  -moz-box-shadow: 0 0 40px orange;
+  box-shadow: 0 0 40px orange;
 }
