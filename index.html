@@ -12,6 +12,9 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
+    <link rel="stylesheet" href="css/jquery-backToTop.min.css">
+
+    <!-- Customized CSS files -->
     <link rel="stylesheet" href="css/background.css">
     <link rel="stylesheet" href="css/home.css">
 
@@ -20,39 +23,45 @@
 
 <body>
     <div class="background">
-        <nav class="navbar navbar-expand-lg fixed-top">
-            <div class="container-fluid">
-                <div class="d-flex align-items-center"><a class="navbar-brand logo" href="#">Portfolio</a></div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarScroll">
-                    <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#Home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#About">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#Skills">Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#Projects">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                    </ul>
+        <header>
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <div class="container-fluid">
+                    <div class="d-flex align-items-center">
+                        <a class="navbar-brand logo" href="index.html">Portfolio</a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarScroll">
+                        <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll"
+                            style="--bs-scroll-height: 100px;">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#About">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Skills">Skills</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Projects">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </header>
 
         <div class="container" id="Home">
             <div class="page-height d-flex align-items-center justify-content-center">
                 <div class="d-flex flex-column text-center">
-                    <span class="title">Kevin Chan</span>
+                    <span class="title scramble">Kevin Chan</span>
                     <span class="sub-title">Programmer Analyst Graduate</span>
                 </div>
             </div>
@@ -78,28 +87,28 @@
 
         <div class="container" id="Skills">
             <div class="page-height d-flex flex-column justify-content-center">
-                <span>Hover over icons</span>
+                <span id="icon-header">Hover mouse over the icons to tilt</span>
                 <div class="container-fluid d-flex justify-content-center">
                     <div class="row">
-                        <div class="code-logo col-3 border border-3" data-tilt>
+                        <div class="code-logo icon-glow col-3 border border-3 border-dark rounded-circle" data-tilt>
                             <img src="images/logo/html-5.png" alt="" class="img-fluid">
                         </div>
-                        <div class="code-logo col-3 border border-3" data-tilt>
-                            <img src="images/logo/css-3.png" alt="" class="img-fluid">
+                        <div class="code-logo icon-glow col-3 border border-3 border-dark rounded-circle" data-tilt>
+                            <img src=" images/logo/css-3.png" alt="" class="img-fluid">
                         </div>
-                        <div class="code-logo col-3 border border-3" data-tilt>
-                            <img src="images/logo/js.png" alt="" class="img-fluid">
+                        <div class="code-logo col-3 border border-3 border-dark rounded-square" data-tilt>
+                            <img src=" images/logo/js.png" alt="" class="img-fluid">
                         </div>
-                        <div class="code-logo col-3 border border-3" data-tilt>
+                        <div class="code-logo icon-glow col-3 border border-3 border-dark rounded-circle" data-tilt>
                             <img src="images/logo/php.png" alt="" class="img-fluid">
                         </div>
-                        <div class="code-logo col-3 border border-3" data-tilt>
+                        <div class="code-logo icon-glow col-3 border border-3 border-dark rounded-circle" data-tilt>
                             <img src="images/logo/mysql.png" alt="" class="img-fluid">
                         </div>
-                        <div class="code-logo col-3 border border-3" data-tilt>
-                            <img src="images/logo/java.png" alt="" class="img-fluid">
+                        <div class="code-logo icon-glow col-3 border border-3 border-dark rounded-circle" data-tilt>
+                            <img src=" images/logo/java.png" alt="" class="img-fluid">
                         </div>
-                        <div class="code-logo col-3 border border-3" data-tilt>
+                        <div class="code-logo icon-glow col-3 border border-3 border-dark rounded-circle" data-tilt>
                             <img src="images/logo/vb-net.png" alt="" class="img-fluid">
                         </div>
                     </div>
@@ -109,7 +118,44 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
     <script src="js/tilt.jquery.js"></script>
+
+    <script src="js/jquery.scrambler.js"></script>
+
+    <script src="js/jquery-backToTop.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            var glower = $('.icon-glow');
+            window.setInterval(function () {
+                glower.toggleClass('active');
+            }, 1000);
+
+            $(function () {
+                $(".title").scrambler({
+                    speed: 100,
+                    duration: 3000,
+                    reveal: 300,
+                    total_iterations: 0,
+                    interval: -1
+                });
+            });
+
+            $(function () {
+                $("#icon-header").scrambler({
+                    effect: "typing",
+                    speed: 100,
+                    duration: 3000,
+                    reveal: 300,
+                    total_iterations: 0
+                });
+            });
+
+            var $button = $.backToTop();
+
+        })
+    </script>
 
 </body>
 
