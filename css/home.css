@@ -33,12 +33,12 @@ span.sub-title {
   height: auto;
   margin: 10px;
   padding: 10px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
 }
 
 .icon-glow {
   border-radius: 50px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   border: 1px solid transparent;
   -webkit-transition: border 1s linear, box-shadow 1s linear;
   -moz-transition: border 1s linear, box-shadow 1s linear;
