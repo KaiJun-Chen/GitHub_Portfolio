@@ -30,13 +30,14 @@ span.sub-title {
 
 .code-logo {
   width: 100px;
-  height: auto;
+  height: 100px;
   margin: 10px;
   padding: 10px;
   background-color: rgb(255, 255, 255);
 }
 
-.icon-glow {
+/* Glowing CSS */
+.code-logo {
   border-radius: 50px;
   background-color: rgb(255, 255, 255);
   border: 1px solid transparent;
@@ -44,11 +45,11 @@ span.sub-title {
   -moz-transition: border 1s linear, box-shadow 1s linear;
   transition: border 1s linear, box-shadow 1s linear;
   width: 100px;
-  height: auto;
+  height: 100px;
   margin: 10px;
 }
 
-.icon-glow.active {
+.code-logo.active {
   -webkit-box-shadow: 0 0 40px orange;
   -moz-box-shadow: 0 0 40px orange;
   box-shadow: 0 0 40px orange;
