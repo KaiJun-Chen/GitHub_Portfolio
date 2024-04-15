@@ -19,11 +19,11 @@
     <link rel="stylesheet" href="css/home.css">
 
     <style>
-        body {
+        /* body {
             background-image: url("images/web-dev-bg.jpg");
-        }
+        } */
 
-        .bgw {
+        /* .bgw {
             background-image: url("images/main-bg.jpg");
             background-repeat: no-repeat;
             background-attachment: fixed;
@@ -31,51 +31,48 @@
             background-size: cover;
             align-items: center;
             height: 100vh;
-        }
+        } */
 
-        .page-height {
+        /* .page-height {
             min-height: 100vh;
-        }
+        } */
     </style>
 </head>
 
 <body>
     <div class="background">
-        <header>
-            <nav class="navbar navbar-expand-lg fixed-top">
-                <div class="container-fluid">
-                    <div class="d-flex align-items-center">
-                        <a class="navbar-brand logo" href="index.html">Portfolio</a>
-                    </div>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarScroll">
-                        <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll"
-                            style="--bs-scroll-height: 100px;">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#Home">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#About">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#Skills">Skills</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#Projects">Projects</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <!-- <div class="d-flex align-items-center"> -->
+                <a class="navbar-brand logo" href="index.html">Portfolio</a>
+                <!-- </div> -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#About">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Contact">Contact</a>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
-        </header>
+            </div>
+        </nav>
 
+        <!-- Homepage section -->
         <div class="container" id="Home">
             <div class="page-height d-flex align-items-center justify-content-center">
                 <div class="d-flex flex-column text-center">
@@ -85,6 +82,7 @@
             </div>
         </div>
 
+        <!-- Personal information section -->
         <div class="container" id="About">
             <div class="page-height d-flex flex-column justify-content-center">
                 <div class="d-flex text-center">
@@ -105,38 +103,80 @@
             </div>
         </div>
 
+        <!-- Programming languages section -->
         <div class="container" id="Skills">
             <div class="page-height d-flex flex-column justify-content-center">
                 <div class="container-fluid d-flex justify-content-center">
-
                     <div class="row justify-content-center text-center">
-                        <h1>My programming languages</h1>
+                        <h1>Programming languages</h1>
                         <div class="code-logo col-3 border border-3 border-dark rounded-circle" data-tilt>
-                            <img src="images/logo/html.png" alt="" class="img-fluid">
+                            <img src="images/logo/html.png" alt="html" class="img-fluid">
                         </div>
                         <div class="code-logo col-3 border border-3 border-dark rounded-circle" data-tilt>
-                            <img src=" images/logo/css.png" alt="" class="img-fluid">
+                            <img src=" images/logo/css.png" alt="css" class="img-fluid">
                         </div>
                         <div class="code-logo col-3 border border-3 border-dark rounded-circle" data-tilt>
-                            <img src=" images/logo/js.png" alt="" class="img-fluid">
+                            <img src=" images/logo/js.png" alt="javascript" class="img-fluid">
                         </div>
                         <div class="code-logo col-3 border border-3 border-dark rounded-circle" data-tilt>
-                            <img src="images/logo/php.png" alt="" class="img-fluid">
+                            <img src="images/logo/php.png" alt="php" class="img-fluid">
                         </div>
                         <div class="code-logo icon-glow col-3 border border-3 border-dark rounded-circle" data-tilt>
-                            <img src="images/logo/mysql.png" alt="" class="img-fluid">
+                            <img src="images/logo/mysql.png" alt="mysql" class="img-fluid">
                         </div>
                         <div class="code-logo icon-glow col-3 border border-3 border-dark rounded-circle" data-tilt>
-                            <img src=" images/logo/java.png" alt="" class="img-fluid">
+                            <img src=" images/logo/java.png" alt="java" class="img-fluid">
                         </div>
                         <div class="code-logo icon-glow col-3 border border-3 border-dark rounded-circle" data-tilt>
-                            <img src="images/logo/vb-net.png" alt="" class="img-fluid">
+                            <img src="images/logo/vb-net.png" alt="vbnet" class="img-fluid">
                         </div>
-                        <h3 id="logo-header">Hover mouse over the icons to tilt</h3>
+                        <h1>Library and Framework</h1>
+                        <div class="code-logo icon-glow col-3 border border-3 border-dark rounded-circle" data-tilt>
+                            <img src="images/logo/bootstrap.png" alt="bootstrap" class="img-fluid">
+                        </div>
+                        <div class="code-logo icon-glow col-3 border border-3 border-dark rounded-circle" data-tilt>
+                            <img src="images/logo/git.png" alt="bootstrap" class="img-fluid">
+                        </div>
+                        <h1>Version Control</h1>
+                        <div class="code-logo icon-glow col-3 border border-3 border-dark rounded-circle" data-tilt>
+                            <img src="images/logo/git.png" alt="git" class="img-fluid">
+                        </div>
+                        <h3 id="logo-desc">Hover mouse over the icons to tilt</h3>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Project showcase section -->
+        <div class="container" id="Projects">
+            <div class="page-height d-flex flex-column justify-content-center">
+
+            </div>
+        </div>
+
+        <!-- Contact information section -->
+        <div class="container" id="Contact">
+            <div class="page-height d-flex flex-column justify-content-center">
+                <form action="">
+                    <div class="">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" style="width: 400px;" placeholder="Your name">
+                        </div>
+                        <!-- <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your email">
+                        </div>
+                        <div class="input-group mb-3">
+                            <textarea class="form-control" placeholder="Your message"></textarea>
+                        </div> -->
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer container my-2" style="background-color: white;">
+            <p>Thiss the footer</p>
+        </div>
+
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -169,7 +209,7 @@
             });
 
             $(function () {
-                $("#logo-header").scrambler({
+                $("#logo-desc").scrambler({
                     effect: "typing",
                     speed: 100,
                     duration: 3000,
