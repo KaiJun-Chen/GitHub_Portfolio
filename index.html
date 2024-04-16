@@ -41,11 +41,9 @@
 
 <body>
     <div class="background">
-        <nav class="navbar navbar-expand-lg fixed-top">
+        <!-- <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container-fluid">
-                <!-- <div class="d-flex align-items-center"> -->
                 <a class="navbar-brand logo" href="index.html">Portfolio</a>
-                <!-- </div> -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
                     aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -70,6 +68,44 @@
                     </ul>
                 </div>
             </div>
+        </nav> -->
+
+
+        <nav class="navbar navbar-expand-lg sticky-nav">
+            <div class="container-fluid">
+                <a class="navbar-brand logo" href="index.html">Personal Portfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end bg-primary" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Kevin Chan</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#About">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Skills">Skills</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Projects">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </nav>
 
         <!-- Homepage section -->
@@ -85,20 +121,22 @@
         <!-- Personal information section -->
         <div class="container" id="About">
             <div class="page-height d-flex flex-column justify-content-center">
-                <div class="d-flex text-center">
+                <div class="d-flex">
                     <div>
                         <img src="images/item-1.jpg" alt="">
                     </div>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, cupiditate neque.
-                        Explicabo,
-                        debitis?
-                        Itaque
-                        nihil adipisci alias aperiam, quisquam repudiandae totam rem est officia consequuntur
-                        doloribus
-                        laboriosam
-                        praesentium, nisi placeat?
-                    </p>
+                    <div class="d-flex mx-auto p-3 text-wrap" style="width: 500px">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, cupiditate neque.
+                            Explicabo,
+                            debitis?
+                            Itaque
+                            nihil adipisci alias aperiam, quisquam repudiandae totam rem est officia consequuntur
+                            doloribus
+                            laboriosam
+                            praesentium, nisi placeat?
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -158,43 +196,46 @@
         <div class="container" id="Contact">
             <div class="page-height d-flex flex-column justify-content-center">
                 <div class="row justify-content-around">
-                    <div class="col-auto" style="width: 400px; border: solid; border-radius:15px;">
-                        <div class="p-3">
-                            <p>Send a message to me</p>
-                            <form action="">
-                                <div class="input-group mb-3">
-                                    <input type="text" class="form-control" placeholder="Your name">
-                                </div>
-                                <div class="input-group mb-3">
-                                    <input type="email" class="form-control" placeholder="Your email">
-                                </div>
-                                <div class="input-group mb-3">
-                                    <textarea class="form-control" placeholder="Your message"
-                                        style="height:100px"></textarea>
-                                </div>
-                            </form>
-                        </div>
+                    <div class="form-box col-auto p-3" style="width: 400px; border: solid; border-radius:15px;">
+                        <h3>Send a message to me</h3>
+                        <form action="">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Your name">
+                            </div>
+                            <div class="input-group mb-3">
+                                <input type="email" class="form-control" placeholder="Your email">
+                            </div>
+                            <div class="input-group mb-3">
+                                <textarea class="form-control" placeholder="Your message"
+                                    style="height:100px"></textarea>
+                            </div>
+                            <div class="input-group mb-3 justify-content-end">
+                                <button type="submit" class="btn btn-light">Submit</button>
+                            </div>
+                        </form>
                     </div>
                     <div class="col-auto">
-                        <p>social media</p>
+                        <h3>Social media</h3>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="footer container my-2" style="background-color: white;">
-            <p>This the footer</p>
+            <h3>This is the footer</h3>
         </div>
 
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <script src="js/tilt.jquery.js"></script>
+    <script type="text/javascript" src="js/tilt.jquery.js"></script>
 
-    <script src="js/jquery.scrambler.js"></script>
+    <script type="text/javascript" src="js/jquery.scrambler.js"></script>
 
-    <script src="js/jquery-backToTop.js"></script>
+    <script type="text/javascript" src="js/jquery-backToTop.js"></script>
+
+    <script type="text/javascript" src="js/stickify.js"></script>
 
     <script>
         $(document).ready(function () {
@@ -206,7 +247,9 @@
             window.setInterval(function () {
                 glower.toggleClass('active');
             }, 1000);
+        });
 
+        $(document).ready(function () {
             $(function () {
                 $(".title").scrambler({
                     speed: 100,
@@ -216,7 +259,9 @@
                     interval: -1
                 });
             });
+        });
 
+        $(document).ready(function () {
             $(function () {
                 $("#logo-desc").scrambler({
                     effect: "typing",
@@ -226,9 +271,12 @@
                     total_iterations: 0
                 });
             });
+        });
 
-            var $button = $.backToTop();
+        var $button = $.backToTop();
 
+        $(function () {
+            $('.sticky-nav').stickify();
         })
     </script>
 

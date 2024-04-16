@@ -54,3 +54,9 @@ span.sub-title {
   -moz-box-shadow: 0 0 40px orange;
   box-shadow: 0 0 40px orange;
 }
+
+/* Contact form background */
+.form-box {
+  backdrop-filter: blur(10px);
+  /* -webkit-backdrop-filter: grayscale(50%); */
+}
