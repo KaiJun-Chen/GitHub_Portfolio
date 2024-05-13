@@ -1,0 +1,58 @@
+body {
+  background-color: #131316;
+  color: #ffffff;
+  font-family: "Courier New", Courier, monospace;
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  min-height: 100vh;
+}
+
+.hidden {
+  opacity: 0;
+  transition: all 1s;
+  transform: translateX(-100%);
+  filter: blur(5px);
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon img {
+  max-height: 100px;
+  max-width: 100px;
+  margin-right: 10px;
+  padding-right: 10px;
+}
+
+.icon:nth-child(2) {
+  transition-delay: 200ms;
+}
+
+.icon:nth-child(3) {
+  transition-delay: 400ms;
+}
+
+.icon:nth-child(4) {
+  transition-delay: 600ms;
+}
