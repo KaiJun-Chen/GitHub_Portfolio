@@ -4,35 +4,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Document</title>
 
-    <!-- Bootstrap version 5.3.3 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
-    <!-- Font Awesome  -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
-
-    <!-- JQuery BackToTop -->
-    <link rel="stylesheet" href="css/jquery-css/jquery-backToTop.min.css">
-
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="test.css">
 
 </head>
 
-<body>
+<body class="">
+
+    <!-- <div class="container" id="Skills">
+        <div class="page-height d-flex flex-column justify-content-center border border-primary border-3">
+            <div class="container-fluid d-flex justify-content-center">
+                <div class="row">
+                    <div class="code-logo col-3" style="background-color: aqua;" data-tilt>
+                        <img src="images/logo/html-5.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="code-logo col-3" style="background-color: aqua;" data-tilt>
+                        <img src="images/logo/css-3.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="code-logo col-3" style="background-color: aqua;" data-tilt>
+                        <img src="images/logo/js.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="code-logo col-3" style="background-color: aqua;" data-tilt>
+                        <img src="images/logo/php.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="code-logo col-3" style="background-color: aqua;" data-tilt>
+                        <img src="images/logo/mysql.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="code-logo col-3" style="background-color: aqua;" data-tilt>
+                        <img src="images/logo/java.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="code-logo col-3" style="background-color: aqua;" data-tilt>
+                        <img src="images/logo/vb-net.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="tilt.jquery.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.js-tilt').tilt({
+                scale: 2,      // 2 = 200%, 1.5 = 150%, etc..
+                speed: 10,    // Speed of the enter/exit transition.
+                transition: true,   // Set a transition on enter/exit.
+                reset: false,   // If the tilt effect has to be reset on exit.
+            })
+        })
+    </script> -->
+
     <!-- Navbar -->
     <nav class="navbar navbar-expand-sm navbar-dark bg-transparent fixed-top" id="navbar">
         <div class="container justify-content-sm-around ">
-            <a class="navbar-brand" href="index.html">Kevin C.</a>
+            <a class="navbar-brand" href="#">Kevin C.</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -42,12 +80,12 @@
                 aria-labelledby="offcanvasNavbarLabel">
                 <!-- Sidebar Header -->
                 <div class="offcanvas-header text-white border-bottom">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
                     <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
                 </div>
                 <!-- Sidebar Body -->
-                <div class="offcanvas-body d-flex flex-column justify-content-center p-1">
+                <div class="offcanvas-body d-flex flex-column justify-content-center p-4">
                     <ul
                         class="navbar-nav justify-content-sm-end justify-content-center align-items-center flex-grow-1 pe-3">
                         <li class="nav-item">
@@ -76,19 +114,9 @@
     </nav>
 
     <div data-bs-spy="scroll" data-bs-target="#navbar" data-bs-smooth-scroll="true" tabindex="0">
-        <!-- Homepage section -->
-        <section class="container" id="home">
-            <div class="page-height d-flex align-items-center justify-content-center">
-                <div class="d-flex flex-column text-center">
-                    <span class="title scramble">Kevin Chan</span>
-                    <span class="sub-title">Passionate programmer</span>
-                </div>
-            </div>
-        </section>
 
-        <!-- Personal information section -->
-        <section class="container" id="about">
-            <div class="page-height d-flex flex-column justify-content-center">
+        <div class="container section" id="home">
+            <div class="vh-100 d-flex flex-column justify-content-center">
                 <div class="d-flex">
                     <div>
                         <img src="images/item-1.jpg" alt="">
@@ -107,53 +135,10 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <!-- Programming languages section -->
-        <section class="container" id="skills">
-            <div class="page-height d-flex flex-column justify-content-center">
-                <div class="row justify-content-center text-center">
-                    <h3 class="subheading">Programming languages</h3>
-                    <div class="code-logo col-3 border border-3 border-dark rounded-circle" data-tilt>
-                        <img src="images/logo/html.png" alt="html" class="img-fluid">
-                    </div>
-                    <div class="code-logo col-3 border border-3 border-dark rounded-circle" data-tilt>
-                        <img src=" images/logo/css.png" alt="css" class="img-fluid">
-                    </div>
-                    <div class="code-logo col-3 border border-3 border-dark rounded-circle" data-tilt>
-                        <img src=" images/logo/js.png" alt="javascript" class="img-fluid">
-                    </div>
-                    <div class="code-logo col-3 border border-3 border-dark rounded-circle" data-tilt>
-                        <img src="images/logo/php.png" alt="php" class="img-fluid">
-                    </div>
-                    <div class="code-logo icon-glow col-3 border border-3 border-dark rounded-circle" data-tilt>
-                        <img src="images/logo/mysql.png" alt="mysql" class="img-fluid">
-                    </div>
-                    <div class="code-logo icon-glow col-3 border border-3 border-dark rounded-circle" data-tilt>
-                        <img src=" images/logo/java.png" alt="java" class="img-fluid">
-                    </div>
-                    <div class="code-logo icon-glow col-3 border border-3 border-dark rounded-circle" data-tilt>
-                        <img src="images/logo/vb-net.png" alt="vbnet" class="img-fluid">
-                    </div>
-                    <h3 class="subheading">Frameworks and libraries</h3>
-                    <div class="code-logo icon-glow col-3 border border-3 border-dark rounded-circle" data-tilt>
-                        <img src="images/logo/bootstrap.png" alt="bootstrap" class="img-fluid">
-                    </div>
-                    <div class="code-logo icon-glow col-3 border border-3 border-dark rounded-circle" data-tilt>
-                        <img src="images/logo/jquery.png" alt="jquery" class="img-fluid">
-                    </div>
-                    <h3 class="subheading">Version Control</h3>
-                    <div class="code-logo icon-glow col-3 border border-3 border-dark rounded-circle" data-tilt>
-                        <img src="images/logo/git.png" alt="git" class="img-fluid">
-                    </div>
-                    <h3 class="subheading">Hover mouse over the icons to tilt</h3>
-                </div>
-            </div>
-        </section>
-
-        <!-- Project showcase section -->
-        <section class="container" id="projects">
-            <div class="page-height d-flex flex-column justify-content-center">
+        <div class="container section" id="projects">
+            <div class="vh-100 d-flex flex-column justify-content-center">
                 <div class="container-fluid row justify-content-center text-center">
                     <div class="m-2" style="height: 100px; width: 100px; background-color: white;"><a href="">Project
                             1</a></div>
@@ -169,11 +154,10 @@
                             6</a></div>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <!-- Contact information section -->
-        <section class="container" id="contact">
-            <div class="page-height d-flex flex-column justify-content-center">
+        <div class="container" id="contact">
+            <div class="vh-100 d-flex flex-column justify-content-center">
                 <div class="row justify-content-around">
                     <div class="form-box col-auto p-3" style="width: 400px; border: solid; border-radius:15px;">
                         <h3>Send a message to me</h3>
@@ -198,27 +182,45 @@
                     </div>
                 </div>
             </div>
-        </section>
-
-        <div class="footer container my-2" style="background-color: white;">
-            <h3>This is the footer</h3>
         </div>
-
     </div>
 
-    <!-- Jquery Library Version 3.7.1 -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        const navbarbg = document.querySelector('.navbar');
 
-    <script type="text/javascript" src="js/jquery/tilt.jquery.js"></script>
-    <script src="js/tilt.js"></script>
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                navbarbg.classList.add('navbar-scrolled');
+                let scrollY = window.scrollY;
+            } else {
+                navbarbg.classList.remove('navbar-scrolled');
+            }
+        });
 
-    <script type="text/javascript" src="js/jquery/jquery.scrambler.js"></script>
-    <script src="js/scrambler.js"></script>
+        // const navlinks = document.querySelectorAll('.nav-link');
+        // const sections = document.querySelectorAll('.section');
 
-    <script type="text/javascript" src="js/jquery/jquery-backToTop.js"></script>
+        // let currentSection = 'home';
 
-    <script src="js/script.js"></script>
+        // window.addEventListener('scroll', () => {
+        //     let scrollPosition = window.scrollY + 100;
 
+        //     sections.forEach(section => {
+        //         if (window.scrollY >= section.offsetTop && scrollPosition < section.offsetTop + section.offsetHeight) {
+        //             currentSection = section.id;
+        //             console.log(section.offsetTop + 'offset');
+        //             console.log(scrollY);
+        //         }
+        //     });
+
+        //     navlinks.forEach(navlink => {
+        //         if (navlink.getAttribute('href') === `#${currentSection}`) {
+        //             document.querySelector('.active').classList.remove('active');
+        //             navlink.classList.add('active');
+        //         }
+        //     });
+        // });
+    </script>
 </body>
 
 </html>

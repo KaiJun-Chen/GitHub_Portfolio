@@ -1,62 +1,19 @@
-a.logo,
-a.nav-link {
-  font-size: 30px;
+/* a.logo, */
+/* a.nav-link {
+  font-size: 18px;
   font-weight: bold;
-}
+} */
 
-a.logo {
+/* a.logo {
   font-size: 50px;
-}
+  display: flex;
+  justify-content: center;
+} */
 
-li a.nav-link:hover {
+/* img.logo {
+  max-height: 75px;
+} */
+
+/* li a.nav-link:hover {
   color: white;
-}
-
-span.title {
-  font-size: 100px;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-shadow: 10px 10px black;
-  color: rgb(10, 225, 180);
-}
-
-span.sub-title {
-  font-size: 30px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: rgb(10, 225, 180);
-  -webkit-text-stroke: 2px black;
-}
-
-.code-logo {
-  width: 100px;
-  height: 100px;
-  margin: 10px;
-  padding: 10px;
-  background-color: rgb(255, 255, 255);
-}
-
-/* Glowing CSS */
-.code-logo {
-  border-radius: 50px;
-  background-color: rgb(255, 255, 255);
-  border: 1px solid transparent;
-  -webkit-transition: border 1s linear, box-shadow 1s linear;
-  -moz-transition: border 1s linear, box-shadow 1s linear;
-  transition: border 1s linear, box-shadow 1s linear;
-  width: 100px;
-  height: 100px;
-  margin: 10px;
-}
-
-.code-logo.active {
-  -webkit-box-shadow: 0 0 40px orange;
-  -moz-box-shadow: 0 0 40px orange;
-  box-shadow: 0 0 40px orange;
-}
-
-/* Contact form background */
-.form-box {
-  backdrop-filter: blur(10px);
-  /* -webkit-backdrop-filter: grayscale(50%); */
-}
+} */
