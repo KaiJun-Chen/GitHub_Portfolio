@@ -96,20 +96,20 @@ span.sub-title {
 }
 
 /* Programming language section */
-.code-logo {
+/* .code-icon {
   width: 100px;
   height: 100px;
   margin: 10px;
   padding: 10px;
   background-color: rgb(255, 255, 255);
-}
+} */
 
 h3.subheading {
   color: #f79256;
 }
 
 /* Glowing CSS */
-.code-logo {
+.icon {
   border-radius: 50px;
   background-color: rgb(255, 255, 255);
   border: 1px solid transparent;
@@ -119,16 +119,77 @@ h3.subheading {
   width: 100px;
   height: 100px;
   margin: 10px;
+  padding: 10px;
 }
 
-.code-logo.active {
+.icon.active {
   -webkit-box-shadow: 0 0 40px orange;
   -moz-box-shadow: 0 0 40px orange;
   box-shadow: 0 0 40px orange;
 }
 
+/* Left side animation */
+div.hidden-l,
+h3.hidden-l {
+  opacity: 0;
+  transition: all 1s;
+  transform: translateX(-100%);
+  filter: blur(5px);
+}
+
+div.show-l,
+h3.show-l {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+/* Right side animation */
+div.hidden-r,
+h3.hidden-r {
+  opacity: 0;
+  transition: all 1s;
+  transform: translateX(100%);
+  filter: blur(5px);
+}
+
+div.show-r,
+h3.show-r {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.icon:nth-child(2) {
+  transition-delay: 100ms;
+}
+
+.icon:nth-child(3) {
+  transition-delay: 200ms;
+}
+
+.icon:nth-child(4) {
+  transition-delay: 300ms;
+}
+
+.icon:nth-child(5) {
+  transition-delay: 400ms;
+}
+
+.icon:nth-child(6) {
+  transition-delay: 500ms;
+}
+
+.icon:nth-child(7) {
+  transition-delay: 600ms;
+}
+
+.icon:nth-child(8) {
+  transition-delay: 700ms;
+}
+
 /* Contact form background */
 .form-box {
-  backdrop-filter: blur(10px);
-  /* -webkit-backdrop-filter: grayscale(50%); */
+  background-color: black;
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.25);
 }
