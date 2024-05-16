@@ -8,6 +8,8 @@
 
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
+
+    <link rel="stylesheet" href="../css/jquery-css/jquery.flipster.min.css">
 </head>
 
 <body>
@@ -50,6 +52,102 @@
             <div class="icon hidden"><img src="../images/logo/mysql.png" alt=""></div>
         </div>
     </section>
+
+    <div id="coverflow">
+        <ul class="flip-items">
+            <li data-flip-title="Title 1">
+                <div class="m-2" style="height: 100px; width: 100px; background-color: white;"><a href="">Project
+                        1</a></div>
+            </li>
+            <li data-flip-title="Title 2">
+                <div class="m-2" style="height: 100px; width: 100px; background-color: white;"><a href="">Project
+                        1</a></div>
+            </li>
+            <li data-flip-title="Title 3">
+                <div class="m-2" style="height: 100px; width: 100px; background-color: white;"><a href="">Project
+                        1</a></div>
+            </li>
+            <li data-flip-title="Title 1">
+                <div class="m-2" style="height: 100px; width: 100px; background-color: white;"><a href="">Project
+                        1</a></div>
+            </li>
+            <li data-flip-title="Title 2">
+                <div class="m-2" style="height: 100px; width: 100px; background-color: white;"><a href="">Project
+                        1</a></div>
+            </li>
+            <li data-flip-title="Title 3">
+                <div class="m-2" style="height: 100px; width: 100px; background-color: white;"><a href="">Project
+                        1</a></div>
+            </li>
+        </ul>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../js/jquery/jquery.flipster.min.js"></script>
+
+    <script>
+        $(function () {
+            var coverflow = $("#coverflow").flipster();
+
+            $("coverflow").flipster({
+
+                // Container for the flippin' items.
+                itemContainer: 'ul',
+
+                // Selector for children of itemContainer to flip
+                itemSelector: 'li',
+
+                // 'coverflow' or 'carousel' or 'flat' or 'wheel'
+                style: 'coverflow',
+
+                // Starting item. Set to 0 to start at the first, 'center' to start in the middle or the index of the item you want to start with.
+                start: 'center',
+
+                // Fading speed
+                fadeIn: 400,
+
+                // Infinite loop
+                loop: false,
+
+                // Enable autoplay
+                autoplay: false,
+
+                // Enable pause on hover
+                pauseOnHover: true,
+
+                // Space between items
+                spacing: -0.6,
+
+                // Switch between items with click
+                click: true,
+
+                // Enable left/right arrow navigation
+                keyboard: true,
+
+                // Enable scrollwheel navigation (up = left, down = right)
+                scrollwheel: true,
+
+                // Enable swipe navigation for touch devices
+                touch: true,
+
+                // If true, flipster will insert an unordered list of the slides
+                nav: false,
+
+                // If true, flipster will insert Previous / Next buttons
+                buttons: false,
+
+                // Changes the text for the Previous button
+                buttonPrev: 'Previous',
+
+                // Changes the text for the Next button
+                buttonNext: 'next',
+
+                // Callback function when items are switches
+                onItemSwitch: $.noop
+            });
+
+        });
+    </script>
 </body>
 
 </html>

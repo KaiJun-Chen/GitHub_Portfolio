@@ -18,7 +18,7 @@ body {
   min-height: 100vh;
 }
 
-/* Navbar */
+/* ===== Navbar ===== */
 .navbar-brand {
   font-size: 24px;
 }
@@ -75,13 +75,17 @@ a.nav-link {
   transition: all 0.5s;
 }
 
-/* Homepage section */
+/* ===== Homepage section ===== */
 span.title {
   font-size: 100px;
   font-weight: bold;
   text-transform: uppercase;
   /* text-shadow: 10px 10px black; */
   /* color: rgb(10, 225, 180); */
+  color: #f79256;
+}
+
+div p {
   color: #f79256;
 }
 
@@ -95,15 +99,7 @@ span.sub-title {
   animation: 3s linear 1s slidein;
 }
 
-/* Programming language section */
-/* .code-icon {
-  width: 100px;
-  height: 100px;
-  margin: 10px;
-  padding: 10px;
-  background-color: rgb(255, 255, 255);
-} */
-
+/* ===== Skills section ===== */
 h3.subheading {
   color: #f79256;
 }
@@ -188,7 +184,7 @@ h3.show-r {
   transition-delay: 700ms;
 }
 
-/* Contact form background */
+/* ==== Contact section ==== */
 .form-box {
   background-color: black;
   box-shadow: 0 3px 10px rgba(255, 255, 255, 0.25);
