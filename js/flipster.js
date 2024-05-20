@@ -1,7 +1,7 @@
 var myFlipster = $("#my-flipster").flipster({
-  style: "flat",
+  style: "carousel",
   loop: true,
-  spacing: 0.5,
+  spacing: 0.2,
 });
 
-myFlipster.flipster("play", 2000);
+// myFlipster.flipster("play", 2000);

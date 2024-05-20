@@ -4,9 +4,11 @@ window.setInterval(function () {
   glower.toggleClass("active");
 }, 1000);
 
+// =================================================================
 // Back to top button
 var $button = $.backToTop();
 
+// =================================================================
 // Change navbar background on scroll
 const navbarbg = document.querySelector(".navbar");
 
@@ -19,7 +21,8 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// Scroll fade in animation left side
+// =================================================================
+// Scroll fade left animation icin
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     // console.log(entry);
@@ -35,18 +38,37 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElement = document.querySelectorAll(".hidden-l");
 hiddenElement.forEach((el) => observer.observe(el));
 
-// Scroll fade in animation icon left side
+// =================================================================
+// Scroll fade right animation icon
 const observer2 = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    // console.log(entry);
     if (entry.isIntersecting) {
       entry.target.classList.add("show-r");
     }
-    // else {
-    //   entry.target.classList.remove("show-r");
-    // }
   });
 });
 
 const hiddenElement2 = document.querySelectorAll(".hidden-r");
 hiddenElement2.forEach((el) => observer2.observe(el));
+
+// =================================================================
+// Scroll fade up animation project
+const observerUp = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show-up");
+    }
+  });
+});
+
+const hiddenElementUp = document.querySelectorAll(".hidden-up");
+hiddenElementUp.forEach((el) => observerUp.observe(el));
+
+// =================================================================
+// Initalize tooltop forst before being able to use
+const tooltipTriggerList = document.querySelectorAll(
+  '[data-bs-toggle="tooltip"]'
+);
+const tooltipList = [...tooltipTriggerList].map(
+  (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+);

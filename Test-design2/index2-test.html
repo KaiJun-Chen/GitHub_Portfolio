@@ -12,7 +12,21 @@
     <link rel="stylesheet" href="../css/jquery-css/jquery.flipster.min.css">
 </head>
 
+<style>
+    #site-landing {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        /* Ensure the canvas is behind other content */
+    }
+</style>
+
 <body>
+    <div id="site-landing"></div>
+
     <h1>Hello World</h1>
 
     <section class="hidden">
@@ -20,7 +34,8 @@
             <h2>Hellow World</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic accusamus repellat quidem iste rem
                 excepturi,
-                amet quae minima fugiat debitis consequatur quia sit veniam neque sunt sapiente eveniet, culpa ab.</p>
+                amet quae minima fugiat debitis consequatur quia sit veniam neque sunt sapiente eveniet, culpa ab.
+            </p>
         </div>
     </section>
 
@@ -38,7 +53,8 @@
     <section class="hidden">
         <div style="width: 500px;">
             <h2>Third</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus dolore laudantium deleniti natus?
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus dolore laudantium deleniti
+                natus?
                 Dicta autem voluptatum ipsa corporis nulla, sapiente, aliquid a labore tempora perspiciatis dolorum,
                 dignissimos maxime nisi! Dolor?</p>
         </div>
@@ -81,6 +97,7 @@
             </li>
         </ul>
     </div>
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="../js/jquery/jquery.flipster.min.js"></script>
@@ -147,6 +164,11 @@
             });
 
         });
+    </script>
+
+    <script src="/js/jquery/polygonizr.min.js"></script>
+    <script>
+        $('#site-landing').polygonizr();
     </script>
 </body>
 

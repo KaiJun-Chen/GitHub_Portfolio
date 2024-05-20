@@ -5,7 +5,6 @@
 }
 
 body {
-  /* background-image: url("../images/web-dev-bg.jpg"); */
   background-color: rgba(0, 0, 0, 0.95);
   /* background-repeat: no-repeat;
   background-attachment: fixed;
@@ -16,9 +15,26 @@ body {
 
 .page-height {
   min-height: 100vh;
+  border-bottom: solid #bebebe;
 }
 
-/* ===== Navbar ===== */
+#site-landing {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  /* Ensure the canvas is behind other content */
+}
+
+h3,
+h6,
+p {
+  color: #f79256;
+}
+
+/* =============== Navbar =============== */
 .navbar-brand {
   font-size: 24px;
 }
@@ -31,7 +47,7 @@ a.nav-link {
   font-size: 18px;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 576px) {
   .sidebar {
     background-color: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(10px);
@@ -75,36 +91,41 @@ a.nav-link {
   transition: all 0.5s;
 }
 
-/* ===== Homepage section ===== */
+/* =============== Homepage section =============== */
 span.title {
   font-size: 100px;
   font-weight: bold;
   text-transform: uppercase;
-  /* text-shadow: 10px 10px black; */
-  /* color: rgb(10, 225, 180); */
   color: #f79256;
 }
 
-div p {
+/* div p {
   color: #f79256;
-}
+} */
 
 span.sub-title {
   font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
-  /* color: rgb(10, 225, 180); */
   color: #f79256;
-  /* -webkit-text-stroke: 1px black; */
   animation: 3s linear 1s slidein;
 }
 
-/* ===== Skills section ===== */
-h3.subheading {
-  color: #f79256;
+/* =============== About Section =============== */
+#picture img {
+  width: 100%;
 }
 
-/* Glowing CSS */
+#description {
+  width: 500px;
+}
+
+/* =============== Skills section =============== */
+/* h3.subheading {
+  color: #f79256;
+} */
+
+/* Glowing effect */
 .icon {
   border-radius: 50px;
   background-color: rgb(255, 255, 255);
@@ -128,7 +149,7 @@ h3.subheading {
 div.hidden-l,
 h3.hidden-l {
   opacity: 0;
-  transition: all 1s;
+  transition: all 0.5s;
   transform: translateX(-100%);
   filter: blur(5px);
 }
@@ -144,7 +165,7 @@ h3.show-l {
 div.hidden-r,
 h3.hidden-r {
   opacity: 0;
-  transition: all 1s;
+  transition: all 0.5s;
   transform: translateX(100%);
   filter: blur(5px);
 }
@@ -184,8 +205,110 @@ h3.show-r {
   transition-delay: 700ms;
 }
 
-/* ==== Contact section ==== */
+/* =============== Projects section =============== */
+.hidden-up {
+  opacity: 0;
+  transition: all 0.5s;
+  transform: translateY(100%);
+  filter: blur(5px);
+}
+
+.show-up {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+
+/* =============== Contact section =============== */
 .form-box {
   background-color: black;
   box-shadow: 0 3px 10px rgba(255, 255, 255, 0.25);
+  width: 400px;
+  border: solid;
+  border-radius: 15px;
+}
+
+.grow {
+  /* opacity: 0; */
+  transition: all 0.5s;
+  transform: scale(1.2) translate(-10px, -10px);
+  /* filter: blur(5px); */
+}
+
+#social {
+  font-size: 30px;
+  color: white;
+}
+
+#social a {
+  color: white;
+}
+
+/* =============== Responsive =============== */
+@media (max-width: 992px) {
+  a.navbar-brand {
+    font-size: 1.2em !important;
+  }
+
+  a.nav-link {
+    font-size: 0.8em !important;
+  }
+
+  .title {
+    font-size: 2.5em !important;
+  }
+
+  .sub-title {
+    font-size: 1.5em !important;
+  }
+}
+
+@media (max-width: 768px) {
+  #picture {
+    display: flex !important;
+    justify-content: center !important;
+    align-content: center !important;
+    width: 420px;
+  }
+
+  #about div.row {
+    flex-direction: column !important;
+    flex-wrap: nowrap;
+    align-items: center !important;
+  }
+
+  #description p {
+    margin-top: 20px;
+  }
+
+  #social {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .title {
+    font-size: 1.8em !important;
+  }
+
+  .sub-title {
+    font-size: 0.8em !important;
+  }
+
+  #picture {
+    width: 350px;
+  }
+
+  #description {
+    width: 380px;
+  }
+
+  .icon {
+    width: 75px;
+    height: 75px;
+  }
+
+  #contactForm {
+    width: 380px;
+  }
 }

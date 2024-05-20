@@ -1,1 +1,1 @@
-Currently working on making my own portfolio website
+My portfolio website design with HTML, CSS and JavaScript. Using Bootstrap and Jquery plugin for easy page layout and dinamyc animations.
