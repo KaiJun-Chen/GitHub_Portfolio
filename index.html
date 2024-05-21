@@ -247,11 +247,17 @@
     <script src="js/flipster.js"></script>
 
     <script src="/js/jquery/polygonizr.min.js"></script>
-    <script src="/js/polygon-particle-bg.js"></script>
+<!--     <script src="/js/polygon-particle-bg.js"></script> -->
 
     <!-- Custom Script -->
     <script src="js/script.js"></script>
+    <script>
+        $("#site-landing").polygonizr();
 
+$("#site-landing").on("contextmenu", function (event) {
+  event.stopPropagation(); // Allow the event to bubble up to the browser
+});
+    </script>
 
 </body>
 
