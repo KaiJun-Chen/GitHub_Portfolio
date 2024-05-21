@@ -112,12 +112,16 @@ span.sub-title {
 }
 
 /* =============== About Section =============== */
+#picture {
+  max-width: 500px;
+}
+
 #picture img {
   width: 100%;
 }
 
 #description {
-  width: 500px;
+  max-width: 500px;
 }
 
 /* =============== Skills section =============== */
@@ -257,17 +261,22 @@ h3.show-r {
 }
 
 @media (max-width: 768px) {
-  #picture {
-    display: flex !important;
-    justify-content: center !important;
-    align-content: center !important;
-    width: 420px;
-  }
-
   #about div.row {
     flex-direction: column !important;
     flex-wrap: nowrap;
     align-items: center !important;
+    max-width: 420px;
+  }
+
+  #picture {
+    display: flex !important;
+    justify-content: center !important;
+    align-content: center !important;
+  }
+
+  #picture img {
+    margin: 15px 0 15px 0;
+    padding: 0 10px 0 10px;
   }
 
   #description p {
@@ -276,6 +285,10 @@ h3.show-r {
 
   #social {
     margin-top: 20px;
+  }
+
+  p {
+    font-size: 0.6em !important;
   }
 }
 
