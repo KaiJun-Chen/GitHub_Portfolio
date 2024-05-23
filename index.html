@@ -190,16 +190,23 @@
                 <div class="row justify-content-around">
                     <div class="form-box col-auto p-3" id="contactForm">
                         <h3 class="subheading">Send a message to me</h3>
-                        <form action="">
+                        <!-- modify this form HTML and place wherever you want your form -->
+                        <form action="https://formspree.io/f/mnqeyvjw" method="POST">
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="Your name">
+                                <input type="text" class="form-control" placeholder="Your name" id="name" name="name"
+                                    required>
                             </div>
                             <div class="input-group mb-3">
-                                <input type="email" class="form-control" placeholder="Your email">
+                                <input type="email" class="form-control" placeholder="Your email" id="email"
+                                    name="email" required>
                             </div>
                             <div class="input-group mb-3">
-                                <textarea class="form-control" placeholder="Your message"
-                                    style="height:100px"></textarea>
+                                <input type="text" class="form-control" placeholder="Subject" id="subject"
+                                    name="subject" required>
+                            </div>
+                            <div class="input-group mb-3">
+                                <textarea class="form-control" placeholder="Your message" style="height:100px"
+                                    id="message" name="message" required></textarea>
                             </div>
                             <div class="input-group mb-3 justify-content-end">
                                 <button type="submit" class="btn btn-light">Submit</button>
@@ -217,6 +224,9 @@
                             data-bs-title="ZeR0Destiny"></i>
                         <i class="fa-brands fa-weixin my-1" data-bs-toggle="tooltip" data-bs-placement="bottom"
                             data-bs-title="ZeR0Destiny3"></i>
+                        <a
+                            href="mailto:kevin.chan13@outlook.com?subject=Hello%20World&body=This%20is%20a%20test%20email.">
+                            <i class="fa-solid fa-envelope"></i></a>
                     </div>
                 </div>
             </div>
@@ -248,7 +258,6 @@
 
     <!-- Custom Script -->
     <script src="js/script.js"></script>
-
 
 </body>
 
